@@ -1,0 +1,28 @@
+####
+GET http://localhost:8080/produk
+
+###
+GET http://localhost:8080/produk/2
+
+###
+POST http://localhost:8080/produk
+Content-Type: application/json
+
+{
+  "nama": "Sprit",
+  "harga": 5000,
+  "stok": 20
+}
+
+###
+PUT http://localhost:8080/produk/2
+Content-Type: application/json
+
+{
+    "nama": "TEH POCUK",
+    "harga": 1500,
+    "stok": 20
+}
+
+###
+DELETE http://localhost:8080/produk/2
