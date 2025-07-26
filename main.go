@@ -12,7 +12,10 @@ func main() {
 	router := gin.Default()
 
 	config.ConnectionDB()
-	config.DB.AutoMigrate(&models.Product{})
+	config.DB.AutoMigrate(
+		&models.Product{},
+		&models.Category{},
+	)
 	router.GET("/", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{"message": "kasir api berjalan"})
 	})

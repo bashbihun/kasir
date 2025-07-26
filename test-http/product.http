@@ -15,6 +15,17 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:8080/produk
+Content-Type: application/json
+
+{
+  "nama": "taro keju",
+  "harga": 2000,
+  "stok": 20,
+  "kategori_id": 2
+}
+
+###
 PUT http://localhost:8080/produk/2
 Content-Type: application/json
 
